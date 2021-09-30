@@ -7,10 +7,6 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-}
-
 .modal {
   position: absolute;
   width: 528px;
@@ -24,8 +20,10 @@
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
-
 .btn-open {
   position: absolute;
   display: flex;
@@ -39,10 +37,10 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-}
-.btn-open:focus .icon-btn,
-.btn-open:hover .icon-btn {
-  fill: var(--blue-color);
+  &:focus .icon-btn,
+  &:hover .icon-btn {
+    fill: var(--blue-color);
+  }
 }
 .backdrop.is-hidden {
   opacity: 0;

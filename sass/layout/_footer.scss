@@ -11,7 +11,6 @@
   display: flex;
   align-items: baseline;
 }
-
 .address {
   font-style: normal;
   margin-top: 20px;
@@ -19,19 +18,19 @@
 .white-logo {
   color: var(--white-text-color);
 }
-.address-link:hover,
-.address-link:focus {
-  color: var(--blue-color);
-}
 .address-link {
   color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
 }
 .address-map {
   color: var(--white-text-color);
-}
-.address-map:hover,
-.address-map:focus {
-  color: var(--blue-color);
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -48,7 +47,6 @@
   fill: var(--white-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .socials-link-footer {
   display: block;
   padding: 12px;
@@ -58,13 +56,11 @@
   color: var(--third-text-color);
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: var(--blue-color);
+  }
 }
-
-.socials-link-footer:focus,
-.socials-link-footer:hover {
-  background-color: var(--blue-color);
-}
-
 .form-subscribe {
   display: flex;
   flex-direction: column;
@@ -84,15 +80,14 @@
   outline: none;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+  }
 }
-.input-subscribe::placeholder {
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
-}
-
 .btn-subscribe {
   display: flex;
   align-items: center;
@@ -110,7 +105,6 @@
   border: transparent;
   cursor: pointer;
 }
-
 .icon-subscribe {
   fill: var(--third-text-color);
   margin-left: 10px;
