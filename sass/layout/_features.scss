@@ -1,13 +1,13 @@
 .features {
   display: flex;
 }
-.features-item {
+.features__item {
   width: 270px;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.features-icon {
+.features__logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
   background-color: var(--btn-bcgrnd-color);
   border-radius: 4px;
 }
-.features-title {
+.features__title {
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 10px;
