@@ -107,11 +107,11 @@ img {
   color: var(--current-color);
 }
 
-.current {
+.header-menu__link--current {
   color: var(--current-color);
 }
 
-.current::after {
+.header-menu__link--current::after {
   content: '';
   position: absolute;
   display: block;
@@ -209,7 +209,7 @@ img {
   background-color: #188ce8;
 }
 
-.section-title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -230,7 +230,7 @@ img {
   margin-right: 30px;
 }
 
-.features__logo {
+.features__box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,7 +249,7 @@ img {
   color: var(--title-color);
 }
 
-.works-section {
+.section--padding {
   padding-top: 0;
 }
 
@@ -285,7 +285,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.team-section {
+.section--background {
   background-color: #f5f4fa;
 }
 

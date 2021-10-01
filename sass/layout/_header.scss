@@ -44,7 +44,7 @@
     color: var(--current-color);
   }
 }
-.current {
+.header-menu__link--current {
   color: var(--current-color);
   &::after {
     content: '';
